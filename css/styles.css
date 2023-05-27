@@ -179,7 +179,7 @@ img {
     margin-left: auto;
 }
     
-.auth-nav__item+.item {
+.auth-nav .item+.item {
     margin-left: 50px;
 }
 
