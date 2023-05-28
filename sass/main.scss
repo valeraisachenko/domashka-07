@@ -1536,11 +1536,13 @@ textarea {
 
     text-decoration: underline;
     color: $accent-color;
+
+    & {
+            transition: transform 250ms linear;
+        }
 }
 
-.box-span {
-    transition: transform 250ms linear;
-}
+
 
 .submit {
     font-family: 'Roboto';
@@ -1556,7 +1558,6 @@ textarea {
     margin-left: 121px;
     margin-top: 30px;
 
-
     color: $primary-white-color;
     display: inline-block;
     padding: 10px 56px;
@@ -1566,14 +1567,16 @@ textarea {
 
     border: none;
     border-radius: 4px;
+
+    &:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            background: teal;
+            transition: transform 250ms $timing-fungtion;
+    
+        }
 }
 
-.submit:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background: teal;
-    transition: transform 250ms $timing-fungtion;
 
-}
 
 
 /*Подписаться */
@@ -1599,41 +1602,43 @@ textarea {
     letter-spacing: 0.06em;
 
     color: $primary-white-color;
-}
 
-.batton:hover,
-.batton:focus {
-    background-color: teal;
-    border: none;
-    transition: transform 250ms $timing-fungtion;
-}
+    &:hover,
+    &:focus {
+            background-color: teal;
+            border: none;
+            transition: transform 250ms $timing-fungtion;
+        }
 
-.batton::after {
+    &::after {
     content: "";
     width: 20px;
     height: 20px;
     margin-left: 10px;
     background-image: url("../img/icon\ send.svg");
     background-size: contain;
+    }
 }
+
 
 .iconx {
     width: 16px;
     height: 12px;
-}
 
-.iconx .letter {
-    fill: $title-text-color;
+    & .letter {
+            fill: $title-text-color;
+        }
 }
 
 .iconxx {
     width: 16px;
     height: 20px;
+
+    & .letter {
+            fill: $title-text-color;
+        }
 }
 
-.iconxx .letter {
-    fill: $title-text-color;
-}
 
 .iconxl {
     width: 20px;
