@@ -8,6 +8,55 @@
 @import './components/hero-bunner';
 @import './components/our-team';
 
+// .link-tel {
+//     display: flex;
+//     color: $title-text-color;
+//     text-decoration: none;
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.02em;
+// }
+
+
+// .link-tel::before {
+//     display: inline-block;
+//     content: "";
+//     width: 10px;
+//     height: 16px;
+//     margin-left: 10px;
+//     background-image: url("../img/tel.svg");
+//     background-size: contain;
+//     cursor: pointer;
+//     color: $accent-color;
+//     margin-right: 10px;
+// }
+
+// .link-tel {
+//     fill: $accent-color;
+// }
+
+
+// .icone:hover {
+//     fill: $primary-white-color;
+// }
+
+// .auth-nav .link-adres .link-tel {
+//     display: block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+// }
+
+// .link-adres:hover {
+//     color: $accent-color;
+// }
+
+// .link-tel:hover {
+//     color: $accent-color;
+// }
+
 /* Button */
 
 .button {
