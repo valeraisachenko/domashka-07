@@ -420,7 +420,8 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.link-adres-tel {
+
+.link-tel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,6 +434,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
 .link-adres::before {
   display: inline-block;
   content: "";
@@ -458,6 +460,7 @@ img {
   color: #2196F3;
   margin-right: 10px;
 }
+
 .link-tel::before {
   fill: #2196F3;
 }

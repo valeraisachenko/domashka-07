@@ -21,6 +21,19 @@
     letter-spacing: 0.02em;
 }
 
+.link-adres::before {
+    display: inline-block;
+    content: "";
+    width: 21px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url("../img/poshta.svg");
+    background-size: contain;
+    cursor: pointer;
+    color: $accent-color;
+    margin-right: 10px;
+}
+
 .link-tel {
         display: flex;
         color: $title-text-color;
@@ -31,20 +44,7 @@
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
-    }
-
-.link-adres::before {
-        display: inline-block;
-        content: "";
-        width: 21px;
-        height: 16px;
-        margin-left: 10px;
-        background-image: url("../img/poshta.svg");
-        background-size: contain;
-        cursor: pointer;
-        color: $accent-color;
-        margin-right: 10px;
-    }
+}
 
 
 .link-tel::before {
@@ -57,12 +57,12 @@
     background-size: contain;
     cursor: pointer;
     color: $accent-color;
-    margin-right: 10px;
+    margin-right: 10px;}
 
-    & {
+.link-tel {
         fill: $accent-color;
     }
-}
+
 
 .icone:hover {
     fill: $primary-white-color;
