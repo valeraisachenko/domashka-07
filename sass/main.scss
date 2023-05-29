@@ -8,54 +8,65 @@
 @import './components/hero-bunner';
 @import './components/our-team';
 
-// .link-tel {
-//     display: flex;
-//     color: $title-text-color;
-//     text-decoration: none;
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 16px;
-//     letter-spacing: 0.02em;
-// }
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.link-tel {
+    display: flex;
+    color: $title-text-color;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
 
 
-// .link-tel::before {
-//     display: inline-block;
-//     content: "";
-//     width: 10px;
-//     height: 16px;
-//     margin-left: 10px;
-//     background-image: url("../img/tel.svg");
-//     background-size: contain;
-//     cursor: pointer;
-//     color: $accent-color;
-//     margin-right: 10px;
-// }
+.link-tel::before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url("../img/tel.svg");
+    background-size: contain;
+    cursor: pointer;
+    color: $accent-color;
+    margin-right: 10px;
+}
 
-// .link-tel {
-//     fill: $accent-color;
-// }
+.link-tel {
+    fill: $accent-color;
+}
 
 
-// .icone:hover {
-//     fill: $primary-white-color;
-// }
+.icone:hover {
+    fill: $primary-white-color;
+}
 
-// .auth-nav .link-adres .link-tel {
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-// }
+.auth-nav .link-adres .link-tel {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-// .link-adres:hover {
-//     color: $accent-color;
-// }
+.link-adres:hover {
+    color: $accent-color;
+}
 
-// .link-tel:hover {
-//     color: $accent-color;
-// }
+.link-tel:hover {
+    color: $accent-color;
+}
 
 /* Button */
 
@@ -427,150 +438,6 @@
     color: $adres-color;
 }
 
-
-/*постоянные клиенты*/
-
-.list-best {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 50px;
-    margin-bottom: 94px;
-}
-
-.my-client {
-    color: $title-text-color;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    margin-top: 94px;
-}
-
-.iter {
-    margin-right: 30px;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-&::before {
-    content: "";
-    display: block;
-    height: 90px;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-&:hover {
-    border: 1px solid $accent-color;
-}
-
-&:nth-child(1)::before {
-    background-image: url(../img/Logo\ \(1\).svg);
-}
-
-&:nth-child(2)::before {
-    background-image: url(../img/company.svg);
-}
-
-&:nth-child(3)::before {
-    background-image: url(../img/krug.svg);
-}
-
-&:nth-child(4)::before {
-    background-image: url(../img/foster\ peters.svg);
-}
-
-
-&:nth-child(5)::before {
-    background-image: url(../img/brend.svg);
-}
-
-&:nth-child(6)::before {
-    background-image: url(../img/kub.svg);
-}
-
-&:nth-child(6n) {
-    margin-right: 0;
-}
-}
-
-.span-logo {
-    display: none;
-}
-
-/* Site nav */
-
-.site-nav {
-    display: flex;
-
-    &__link {
-        color: $title-text-color;
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-
-        text-decoration: none;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-
-        margin-left: 50px;
-    }
-
-    &__current {
-        color: $title-text-color;
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-
-        text-decoration: none;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-
-        margin-left: 50px;
-
-        position: relative;
-        color: $accent-color;
-    }
-
-    &__current::after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: $accent-color;
-
-        left: 0;
-        bottom: 0;
-
-        border-radius: 2px;
-        transition: opacity 250ms $timing-fungtion;
-    }
-
-    &__link:hover {
-        color: $accent-color;
-    }
-}
 /*Наша команда*/
 
 .team {
@@ -622,6 +489,88 @@
     margin-bottom: 10px;
 
     color: $adres-color;
+}
+
+
+/*постоянные клиенты*/
+
+.list-best {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.my-client {
+    color: var(--title-text-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top: 94px;
+}
+
+.iter::before {
+    content: "";
+    display: block;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iter {
+    margin-right: 30px;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.iter:hover {
+    border: 1px solid #2196f3;
+}
+
+.iter:nth-child(1)::before {
+    background-image: url(../img/Logo\ \(1\).svg);
+}
+
+.iter:nth-child(2)::before {
+    background-image: url(../img/company.svg);
+}
+
+.iter:nth-child(3)::before {
+    background-image: url(../img/krug.svg);
+}
+
+.iter:nth-child(4)::before {
+    background-image: url(../img/foster\ peters.svg);
+}
+
+
+.iter:nth-child(5)::before {
+    background-image: url(../img/brend.svg);
+}
+
+.iter:nth-child(6)::before {
+    background-image: url(../img/kub.svg);
+}
+
+.iter:nth-child(6n) {
+    margin-right: 0;
+}
+
+.span-logo {
+    display: none;
 }
 
 /*Footers*/

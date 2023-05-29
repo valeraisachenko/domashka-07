@@ -698,12 +698,17 @@ img {
   background-size: 20px;
   width: 44px;
   height: 44px;
+  
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
+}
+
+.iconeli:hover {
+  background-color: #2196f3;
 }
 
 .bicon {
@@ -730,9 +735,6 @@ img {
   fill: #ffffff;
 }
 
-.iconeli:hover {
-  background-color: #2196f3;
-}
 
 .future-list > .item {
   -ms-flex-preferred-size: 25%;
