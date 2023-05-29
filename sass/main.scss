@@ -84,7 +84,7 @@ img {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: $itle-text-color;
+    color: $title-text-color;
     text-decoration: none;
 }
 
@@ -247,7 +247,6 @@ img {
     color: $accent-color;
 }
 
-
 .main-nav__logo {
 font-family: 'Raleway';
 font-style: normal;
@@ -278,14 +277,15 @@ padding-bottom: 25px;
 .main-nav__logolink {
     text-decoration: none;
     margin-right: 90px;
-}
 
-
-.main-nav__logo:hover,
-.main-nav__logo:focus {
+&__logo:hover,
+&__logo:focus {
     color: $accent-color;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $timing-fungtion;
+        }
 }
+
+/* page-header */
 
 .page-header {
     border-bottom: 1px solid #ECECEC;
@@ -295,7 +295,6 @@ padding-bottom: 25px;
 
 .site-nav {
     display: flex;
-
 
 &_link {
     color: $title-text-color;
